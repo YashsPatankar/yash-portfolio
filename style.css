@@ -3,7 +3,7 @@ body {
   background-color: #0e0e0e;
   font-family: 'Segoe UI', sans-serif;
   color: white;
-  padding: 40px;
+  padding: 20px;
 }
 
 .container {
@@ -16,74 +16,76 @@ h1 {
   margin-bottom: 10px;
 }
 
-.highlight {
-  color: #00f0ff;
-}
-
-.contact {
-  margin: 10px 0 40px;
-  color: #ccc;
-  font-size: 0.95rem;
-}
-
-a {
-  color: #00f0ff;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-section {
+h2 {
+  color: #00fff0;
   margin-top: 40px;
 }
 
-h2 {
-  color: #00ffd5;
-  margin-bottom: 10px;
+p, li {
+  color: #dcdcdc;
+  line-height: 1.6;
 }
 
-.tech-stack span {
+.highlight {
+  color: #00fff0;
+}
+
+a {
+  color: #00fff0;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.contact {
+  margin: 10px 0 30px;
+  font-size: 0.95rem;
+}
+
+.skills span {
   display: inline-block;
-  background-color: #1c1c1c;
+  background: #1a1a1a;
   padding: 8px 14px;
   margin: 6px;
   border-radius: 6px;
   font-size: 0.9rem;
 }
 
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.project-card {
-  background-color: #1b1b1b;
-  padding: 20px;
+.project {
+  background: #1b1b1b;
+  padding: 16px;
   border-radius: 8px;
-  border-left: 4px solid #00ffd5;
+  margin-bottom: 20px;
+  border-left: 4px solid #00fff0;
 }
 
-.project-card h3 {
-  margin-top: 0;
-  color: #fbd14b;
+footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
 }
 
 .fade-in {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(20px);
   animation: fadeUp 0.6s ease-out forwards;
 }
-
-.delay-1 { animation-delay: 0.3s; }
-.delay-2 { animation-delay: 0.6s; }
-.delay-3 { animation-delay: 0.9s; }
-.delay-4 { animation-delay: 1.2s; }
-.delay-5 { animation-delay: 1.5s; }
-.delay-6 { animation-delay: 1.8s; }
 
 @keyframes fadeUp {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .skills span {
+    font-size: 0.8rem;
+  }
+  .project {
+    padding: 12px;
   }
 }
